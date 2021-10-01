@@ -1,0 +1,117 @@
+  /* ----------------- Menú -------------------- */
+
+.menuStyle {
+    display: flex;
+    justify-content: center;
+}  
+
+.menuStyle img:hover {
+    transform: scale(1.1,1.1);
+}
+
+.sectionCarrousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 1s ease-in-out;
+}
+
+ /* ----------------- Galeria -------------------- */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 40px;
+}
+
+.gridContainer img:hover {
+    margin: 2px;
+    padding: 2px;
+    transform: scale(1.3,1.3);
+}
+ 
+
+.flexPosition {
+    display: flex;
+    justify-content: center;
+}
+
+  /* ----------------- Nosotros -------------------- */
+
+.titleNosotros {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: none;
+    letter-spacing: 2px;
+    color: #432918;
+}
+
+.titleReverse {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: none;
+    letter-spacing: 2px;
+    color: #432918;
+    text-align: right;
+}
+
+.flexInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flexReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ /* ----------------- Contacto -------------------- */
+
+.title {
+    margin: 32px 32px 50px 32px;
+}
+
+ /* Google maps */
+
+/* .mapContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContact {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.contactFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* ----------------- Covid-19 -------------------- */
+
+
+
+
+ 
