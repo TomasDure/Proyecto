@@ -1,0 +1,139 @@
+/*HOME-----------------------------------------*/
+/*Titulo principal*/
+h1 {
+    animation-duration: 3s;
+    animation-name: aparecer;
+  }
+
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 6;
+    }
+  }
+
+  /*Botton*/
+  .button-style {
+    font-size: 20px;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .button {
+    color: #ffffff;
+    background-color: rgb(204, 151, 82);
+  }
+  
+  .buttonOrder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Img recomendacion local*/
+  .imgFlex {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .flexPosition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    p {
+      padding: 0px 150px;
+    }
+  }
+
+  /*Google maps*/
+  .mapFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*Media querie*/
+  @media screen and (max-width: 1020px) {
+    .contenedor-main, section {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    .contenedor-header, .contenedor-main, .contenedor-footer footer {
+      max-width: 1000px;
+      padding: 0 20px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    .container-all {
+      transition: all 300ms;
+    }
+  
+    .move-container-all {
+      transform: translateX(300px);
+    }
+  
+    .menu {
+      width: 0px;
+      height: 100vh;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      background-color: #F5E8C7;
+      overflow: hidden;
+      transform: translateX(-350px);
+      box-shadow: 10px 0px 20px -25px black;
+      transition: all 300ms cubic-bezier(1, 0, 0, 1);
+    }
+  
+    .show-lateral {
+      width: 300px;
+      transform: translateX(0px);
+    }
+  
+    .menu nav ul {
+      flex-direction: column;
+  
+      li {
+        max-width: 200px;
+        height: 40px;
+        justify-content: flex-start;
+      }
+    }
+  
+    .mapFlex {
+      max-width: 95%;
+    }
+  
+    #icon-menu {
+      display: flex;
+    }
+  
+    section iframe {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    div {
+      flex-direction: column;
+    }
+  
+    section iframe {
+      width: 90%;
+      height: 200px;
+    }
+  }

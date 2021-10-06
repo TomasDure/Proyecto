@@ -1,0 +1,27 @@
+/*MENÚ-----------------------------------------*/
+.menuStyle {
+    display: flex;
+    justify-content: center;
+  
+    img:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+
+  /*Carrousel*/
+  .sectionCarrousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 1s ease-in-out;
+  }

@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&family=Pacifico&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     
     <!-- bootstrap -->
-    <link rel="stylesheet" href="../bootstrap-5.1.1-dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
     
     <!-- Css -->
     <link rel="stylesheet" href="../css/style.css">
@@ -21,36 +22,49 @@
 
     <!-- Animacion -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
 
     <title>Olivas Del Sur | Quiénes somos</title>
 </head>
 <body>
     <header>
-        <nav id="nav-menu">
-            <ul class="menu-bar">
-                <li>
-                    <img src="../public/images/logo.png" width="200" alt="Logo">
-                </li>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="menu.html">Menú</a>
-                </li>
-                <li>
-                    <a href="galeria.html">Galería</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Quiénes somos</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="covid-19.html">Covid-19</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="contenedor-header">
+            <div class="logo">
+                <img src="../public/images/logo.png" width="200" alt="Logo">
+            </div>
+
+            <!-- Menu nav -->
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="menu.html">Menú</a>
+                        </li>
+                        <li>
+                            <a href="galeria.html">Galería</a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html">Quiénes somos</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="covid-19.html">Covid-19</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    
+        <div id="icon-menu">
+            <i>
+                <img src="../public/images/menu.png" height="20px" width="20px" alt="menu hamburguesa">
+            </i>
+        </div>
     </header>
 
     <div>
@@ -60,42 +74,29 @@
     <main>
         <h5 class="style-title">• Nuestra cocina casera refleja a la tradicional comida al estilo Argentino. <br> Nos especializamos en pizzas y empanadas •</h5>
 
-        <section class="animate__animated animate__fadeInLeft">
-            <h2 class="titleNosotros">• Nosotros •</h2>
-            <div class="flexInfo">
-                <img src="https://dummyimage.com/200x200/cc9751/fff" alt="">
-                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, fugiat. Voluptate numquam repellat qui ab!</p>
-            </div>
-        </section>
-
-        <section class="animate__animated animate__fadeInRight">
-            <h2 class="titleReverse">• Acerca de Olivas del sur •</h2>
-            <div class="flexReverse">
-                <img src="https://dummyimage.com/200x200/cc9751/fff" alt="">
-                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, fugiat. Voluptate numquam repellat qui ab!</p>
-            </div>
-        </section>
-
-        <section class="animate__animated animate__fadeInLeft" data-aos="fade-right">
-            <h2 class="titleNosotros">• Nuestra ubicación •</h2>
-            <div class="flexInfo">
-                <img src="https://dummyimage.com/200x200/cc9751/fff" alt="">
-                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perferendis reprehenderit culpa optio alias facilis.</p>
-            </div>
-        </section>
-
-        <!-- <section>
-            <h2 class="titleNosotros">• Galería de imágenes •</h2>
-                <div>
-                    <img src="https://dummyimage.com/200x200/cc9751/fff" alt="">
-                    <img src="https://dummyimage.com/200x200/cc9751/fff" alt="">
-                    <img src="https://dummyimage.com/200x200/cc9751/fff" alt="">
-                    <img src="https://dummyimage.com/200x200/cc9751/fff" alt="">
-                    <img src="https://dummyimage.com/200x200/cc9751/fff" alt="">
-                    <img src="https://dummyimage.com/200x200/cc9751/fff" alt="">
-                    <img src="https://dummyimage.com/200x200/cc9751/fff" alt="">
+        <section class="flexInfo" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000">
+            <img src="https://dummyimage.com/200x200/cc9751/fff" alt="">
+                <div class="text-title1">
+                    <h2 class="titleNosotros">• Nosotros •</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio officiis non maxime illo sunt magni voluptatibus eos sapiente perspiciatis id deserunt, soluta commodi explicabo blanditiis tempore aliquid optio! Cupiditate, itaque.</p>
                 </div>
-        </section> -->
+        </section>
+
+        <section class="flexInfo" data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000">
+            <div class="text-title1">
+                <h2 class="titleNosotros">• Acerca de Olivas del sur •</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, fugiat. Voluptate numquam repellat qui ab!</p>
+            </div>
+                <img src="https://dummyimage.com/200x200/cc9751/fff" alt="">
+        </section>
+
+        <section class="flexInfo" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" >
+            <img src="https://dummyimage.com/200x200/cc9751/fff" alt="">
+                <div class="text-title1">
+                    <h2 class="titleNosotros">• Nuestra ubicación •</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perferendis reprehenderit culpa optio alias facilis.</p>
+                </div>
+        </section>
     </main>
 
     <footer>
@@ -119,23 +120,26 @@
 
         <!-- Nav Footer -->
 
-        <section>
-            <nav id="nav-footer">
-                <ul class="menu-bar">
-                    <li class="list-main">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li>
                         <a href="../index.html">Inicio</a>
                     </li>
-                    <li class="list-main">
+                    <li>
                         <a href="menu.html">Menú</a>
                     </li>
-                    <li class="list-main">
+                    <li>
                         <a href="contacto.html">Contacto</a>
                     </li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </footer>
 
-    <script src="../bootstrap-5.1.1-dist/js/bootstrap.js" ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
