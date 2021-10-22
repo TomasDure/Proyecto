@@ -34,26 +34,26 @@
             </div>
 
             <!-- Menu nav -->
-            <div class="menu">
+            <div class="menu" id="show-menu">
                 <nav>
                     <ul>
                         <li>
-                            <a href="../index.html">Inicio</a>
+                            <a href="../index.html"> <img src="../public/images/aceitunaIcon.png" alt="icon"> Inicio</a>
                         </li>
                         <li>
-                            <a href="menu.html">Menú</a>
+                            <a href="menu.html"> <img src="../public/images/aceitunaIcon.png" alt="icon"> Menú</a>
                         </li>
                         <li>
-                            <a href="galeria.html">Galería</a>
+                            <a href="galeria.html"> <img src="../public/images/aceitunaIcon.png" alt="icon"> Galería</a>
                         </li>
                         <li>
-                            <a href="nosotros.html">Quiénes somos</a>
+                            <a href="nosotros.html"> <img src="../public/images/aceitunaIcon.png" alt="icon"> Quiénes somos</a>
                         </li>
                         <li>
-                            <a href="contacto.html">Contacto</a>
+                            <a href="contacto.html"> <img src="../public/images/aceitunaIcon.png" alt="icon"> Contacto</a>
                         </li>
                         <li>
-                            <a href="covid-19.html">Covid-19</a>
+                            <a href="covid-19.html"> <img src="../public/images/aceitunaIcon.png" alt="icon"> Covid-19</a>
                         </li>
                     </ul>
                 </nav>
@@ -67,11 +67,13 @@
         </div>
     </header>
 
-    <div>
-        <h1 class="titular-main">Quiénes somos</h1>
-    </div>
+<div class="container-all" id="move-content">
   
     <main>
+        <div>
+            <h1 class="titular-main">Quiénes somos</h1>
+        </div>
+
         <h5 class="style-title">• Nuestra cocina casera refleja a la tradicional comida al estilo Argentino. <br> Nos especializamos en pizzas y empanadas •</h5>
 
         <section class="flexInfo" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000">
@@ -131,10 +133,16 @@
             </div>    
         </div>        
     </footer>
+</div>
 
+    <!-- Script menu hamburguesa -->
+    <script src="js/../../js/menu.js"></script>
+
+    <!-- Script animación -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
     </script>
+       
 </body>
 </html>
