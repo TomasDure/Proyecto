@@ -212,7 +212,7 @@ h1 {
   .move-container-all {
     transform: translateX(300px); }
   .menu {
-    width: 0px;
+    width: 300px;
     height: 100vh;
     position: fixed;
     top: 0px;
@@ -229,8 +229,11 @@ h1 {
     flex-direction: column; }
     .menu nav ul li {
       max-width: 200px;
-      height: 40px;
+      height: 50px;
       justify-content: flex-start; }
+    .menu nav ul a {
+      margin-top: 50px;
+      width: 700px; }
   .mapFlex {
     max-width: 95%; }
   #icon-menu {
@@ -243,10 +246,18 @@ h1 {
     max-width: 95%; } }
 
 @media screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden; }
   .contenedor-main {
     max-width: 97%; }
   section iframe {
-    width: 90%; } }
+    width: 95%;
+    justify-content: center;
+    align-items: center; } }
+
+@media screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden; } }
 
 /*MENÚ-----------------------------------------*/
 .menuStyle {

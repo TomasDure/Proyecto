@@ -107,7 +107,7 @@
     }
   
     .menu {
-      width: 0px;
+      width: 300px;
       height: 100vh;
       position: fixed;
       top: 0px;
@@ -129,8 +129,12 @@
   
       li {
         max-width: 200px;
-        height: 40px;
+        height: 50px;
         justify-content: flex-start;
+      }
+      a {
+        margin-top: 50px;
+        width: 700px;
       }
     }
   
@@ -156,11 +160,23 @@
   }
 
   @media screen and (max-width: 400px) {
+    body {
+      overflow-x: hidden;
+    }
+
     .contenedor-main {
       max-width: 97%;
     }
 
     section iframe {
-      width: 90%;
+      width: 95%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    body {
+      overflow-x: hidden;
     }
   }
