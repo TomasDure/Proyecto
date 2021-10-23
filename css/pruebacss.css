@@ -468,7 +468,8 @@ body main section div p {
   .container-mobile img {
     width: 50%; }
   .container-mobile p {
-    text-align: center; } }
+    text-align: center;
+    font-size: 14px; } }
 
 @media screen and (max-width: 450px) {
   .container-mobile img {
