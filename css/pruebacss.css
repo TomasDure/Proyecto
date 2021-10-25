@@ -193,7 +193,7 @@ footer {
 /*Paragraph*/
 .paragraph {
   color: #432918;
-  font-size: 1em;
+  font-size: 16px;
   text-align: center; }
 
 /*Logos redes sociales*/
@@ -232,7 +232,8 @@ h1 {
   background-color: #cc9752; }
 
 .button:hover {
-  color: #ffffff; }
+  color: #ffffff;
+  background-color: #A88557; }
 
 .buttonOrder {
   display: flex;
@@ -347,12 +348,6 @@ h1 {
     align-items: center; } }
 
 /*MENÚ-----------------------------------------*/
-.menuStyle {
-  display: flex;
-  justify-content: center; }
-  .menuStyle img:hover {
-    transform: scale(1.1, 1.1); }
-
 /*Carrousel*/
 .sectionCarrousel {
   display: flex;
@@ -369,7 +364,6 @@ h1 {
   backface-visibility: hidden;
   transition: transform 1s ease-in-out; }
 
-/*Media querie*/
 /*GALERÍA-----------------------------------------*/
 /*Galería de fotos*/
 .gridContainer {
@@ -475,7 +469,6 @@ body main section div p {
   .container-mobile img {
     width: 50%; }
   .container-mobile p {
-    text-align: center;
     font-size: 14px; } }
 
 @media screen and (max-width: 450px) {
@@ -483,7 +476,9 @@ body main section div p {
     width: 90%; }
   .container-mobile {
     margin-left: 10px;
-    margin-right: 10px; } }
+    margin-right: 10px; }
+  .titleNosotros {
+    font-size: 26px; } }
 
 /*Media querie*/
 @media screen and (max-width: 1150px) {
@@ -501,3 +496,47 @@ body main section div p {
     flex-wrap: wrap;
     align-items: center;
     width: 95%; } }
+
+/*Covid-19-----------------------------------------*/
+/*Titulo protocolos*/
+.titleProtocolos {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+  font-weight: 100;
+  text-transform: none;
+  letter-spacing: 2px;
+  color: #432918;
+  text-align: center; }
+
+/*Paragraph*/
+.paragraphCovid {
+  color: #432918;
+  font-size: 16px;
+  text-align: justify; }
+
+.container-covid {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.239);
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border: 2px dashed #cc9752; }
+
+@media screen and (max-width: 910px) {
+  .container-covid {
+    margin-left: 10px;
+    margin-right: 10px; } }
+
+@media screen and (max-width: 550px) {
+  body {
+    overflow-x: hidden; }
+  .titleProtocolos {
+    font-size: 28px; }
+  .container-covid img {
+    width: 100%; }
+  .container-covid p {
+    margin-left: 10px;
+    margin-right: 10px; } }

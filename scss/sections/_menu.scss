@@ -1,13 +1,4 @@
 /*MENÚ-----------------------------------------*/
-.menuStyle {
-    display: flex;
-    justify-content: center;
-  
-    img:hover {
-      transform: scale(1.1, 1.1);
-    }
-  }
-
   /*Carrousel*/
   .sectionCarrousel {
     display: flex;
@@ -26,6 +17,6 @@
     transition: transform 1s ease-in-out;
   }
 
- /*Media querie*/
+ 
 
   
