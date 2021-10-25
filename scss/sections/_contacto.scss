@@ -12,12 +12,27 @@
     }
 }
 
-@media screen and (max-width: 800px) {
-    .contenedor-main div iframe {
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
+@media screen and (max-width: 700px) {
+    .row {
         width: 95%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     } 
+    .contenedor-main div iframe {
+        width: 32em;
+    }
+    .contenedor-main {
+        width: 100%;
+    }
 }
+
+@media screen and (max-width: 450px) {
+    .contenedor-main div iframe {
+        width: 112%;
+    }
+}
+
+
+
 
