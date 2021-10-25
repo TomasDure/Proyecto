@@ -482,7 +482,7 @@ body main section div p {
 
 @media screen and (max-width: 450px) {
   .container-mobile img {
-    width: 80%; } }
+    width: 90%; } }
 
 /*Media querie*/
 @media screen and (max-width: 1150px) {
