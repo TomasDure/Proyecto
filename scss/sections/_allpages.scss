@@ -1,3 +1,5 @@
+@import "../sections/variables";
+
 *{
     box-sizing: border-box;
     text-decoration: none;    
@@ -9,13 +11,13 @@ html {
   
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #F5E8C7;
+    background-color: $color-body;
 }
   
 header {
     margin: 0px;
     padding: 0px;
-    background-color: #F5E8C7;
+    background-color: $color-body;
     top: 0;
     left: 0;
     width: 100%;
@@ -40,7 +42,7 @@ header {
 /*Footer*/
 footer {
   width: 100%;
-  background-color: #84725c;
+  background-color: $color-footer;
   margin-top: 25px;
   color: #F6EACC;
 }
@@ -161,8 +163,8 @@ footer {
           justify-content: center;
   
           a {
-            background-color: #F5E8C7;
-            color: #432918;
+            background-color: $color-body;
+            color: $color-secondary;
             text-decoration: none;
             font-size: 19px;
           }
@@ -175,7 +177,7 @@ footer {
     }
   
     ul li a:hover {
-      border-bottom: 3px solid #cc9752;
+      border-bottom: 3px solid $color-primary;
     }
   }
 
@@ -205,8 +207,8 @@ footer {
           justify-content: center;
   
           a {
-            background-color: #F5E8C7;
-            color: #432918;
+            background-color: $color-body;
+            color: $color-secondary;
             text-decoration: none;
             font-size: 19px;
           }
@@ -215,7 +217,7 @@ footer {
     }
   
     ul li a:hover {
-      border-bottom: 3px solid #cc9752;
+      border-bottom: 3px solid $color-primary;
     }
   }
 
@@ -238,7 +240,7 @@ footer {
 
   /*Titulos*/
   .titular-main {
-    color: #cc9752;
+    color: $color-primary;
     font-family: 'Montserrat', 'Roboto';
     font-size: 3em;
     font-weight: 300;
@@ -253,12 +255,12 @@ footer {
     font-weight: 100;
     text-transform: none;
     letter-spacing: 2px;
-    color: #432918;
+    color: $color-secondary;
   }
 
   /*Paragraph*/
   .paragraph {
-    color: #432918;
+    color: $color-secondary;
     font-size: 16px;
     text-align: center;
   }
