@@ -401,6 +401,13 @@ h1 {
     /*Opera*/
     -o-transform: scale(1.5); }
 
+/*Media querie*/
+@media screen and (max-width: 900px) {
+  .contenedor-main .gridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; } }
+
 /*NOSOTROS-----------------------------------------*/
 /*Titulos nosotros*/
 .titleNosotros {
